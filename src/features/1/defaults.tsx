@@ -100,8 +100,8 @@ export const DEF_VALUE_PRICES: IFeature1ValuePrices[] = [
 ]
 
 export const DEF_VALUE: IFeature1Value = {
-    title: "Мы лучшие в мирdddе!",
-    subtitle: "Закажите сейчас и получите скидку 50%",
+    title: "Мы лучшая в мир компания!",
+    subtitle: "Lorem ipsum dolor sit amet",
     button_text: "Купить",
     prices: DEF_VALUE_PRICES,
 }
