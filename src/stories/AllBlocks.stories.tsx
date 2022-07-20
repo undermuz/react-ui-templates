@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react"
 import { Box, Grommet } from "grommet"
 import { FC } from "react"
 
-import Price2 from "../prices/2/view"
+import Feature1 from "../features/1/view"
 import styled from "styled-components"
 
 const UiContainer = styled(Box)`
@@ -19,7 +19,7 @@ const AllBlocksStory: FC<{}> = () => {
     return (
         <Grommet>
             <UiContainer direction="column" fill>
-                <Price2 />
+                <Feature1 />
             </UiContainer>
         </Grommet>
     )
