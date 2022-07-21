@@ -1,10 +1,8 @@
-import { Box, Button, Heading, Paragraph, Text, List, Grid } from "grommet"
-import React, {
-    MouseEventHandler,
-    PropsWithChildren,
-    PureComponent,
-} from "react"
+import React, { MouseEventHandler } from "react"
 import styled from "styled-components"
+
+import { Box, Heading, Paragraph, Text, Grid } from "grommet"
+
 import { IBlog1, IBlog1Value, IBlog1ValueListItem } from "."
 import DEF_VALUE from "./defaults"
 
@@ -109,7 +107,7 @@ const CustomGrid = styled.div`
     gap: 10px;
 `
 
-const Blog1: React.FC<IBlog1> = (props) => {
+const Blog1: React.FC<Partial<IBlog1>> = (props) => {
     const {
         id = 0,
         value = DEF_VALUE,

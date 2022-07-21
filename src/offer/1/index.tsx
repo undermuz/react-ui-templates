@@ -1,17 +1,18 @@
 // SYSTEM
 import { EnumSchemeItemType } from "@undermuz/react-json-form"
 import { IScheme } from "@undermuz/react-json-form/build/types/types"
+import { IBlock } from "@undermuz/react-page-builder/build/types/types"
 
-import { Box, Button, Heading, Paragraph } from "grommet"
-import React, { MouseEventHandler } from "react"
-import { IBlock } from "../../types"
+import { MouseEventHandler } from "react"
+import DEF_VALUE from "./defaults"
+import view from "./view"
 
-interface IOfferBlockValueAdvantage {
+export interface IOfferBlockValueAdvantage {
     title: string
     image: string
 }
 
-interface IOfferBlockValue {
+export interface IOfferBlockValue {
     title: string
     subtitle: string
     show_button: boolean
@@ -21,79 +22,11 @@ interface IOfferBlockValue {
     advantage: IOfferBlockValueAdvantage[]
 }
 
-interface IOfferBlock {
+export interface IOfferBlock {
     id: number
     value: IOfferBlockValue
     onButtonClick?: MouseEventHandler<HTMLAnchorElement> &
         MouseEventHandler<HTMLButtonElement>
-}
-
-const DEF_VALUE_ADVANTAGE = [
-    { id: 1, title: "С нами проще", image: "" },
-    { id: 2, title: "Выгода при первой покупке", image: "" },
-    { id: 3, title: "Рост на 146%", image: "" },
-]
-
-const DEF_VALUE = {
-    title: "Мы лучшие в мире!",
-    subtitle: "Закажите сейчас и получите скидку 50%",
-    button_text: "Заказать",
-    show_button: true,
-    show_adv: true,
-    image: null,
-    advantage: DEF_VALUE_ADVANTAGE,
-}
-
-const exampleButtonClick = () => {
-    alert("click")
-}
-
-const OfferBlock: React.FC<IOfferBlock> = (props) => {
-    const { value = DEF_VALUE, onButtonClick = exampleButtonClick } = props
-
-    const {
-        title = DEF_VALUE.title,
-        subtitle = DEF_VALUE.subtitle,
-        show_button = DEF_VALUE.show_button,
-        button_text = DEF_VALUE.button_text,
-        show_adv = DEF_VALUE.show_adv,
-        advantage = DEF_VALUE.advantage,
-    } = value
-
-    return (
-        <Box background={{ color: "neutral-2", opacity: true }}>
-            <Box pad="xlarge" align="center">
-                <Heading>{title}</Heading>
-
-                <Paragraph>{subtitle}</Paragraph>
-
-                {show_button && (
-                    <Box>
-                        <Button
-                            primary
-                            size="large"
-                            onClick={onButtonClick}
-                            label={button_text}
-                        />
-                    </Box>
-                )}
-            </Box>
-
-            {show_adv && advantage.length > 0 && (
-                <Box pad="large" background={{ color: "neutral-2" }}>
-                    <Box direction="row" justify="around">
-                        {advantage.map((item, index) => (
-                            <Box key={index}>
-                                <img src={item.image} alt="" />
-
-                                <span>{item.title}</span>
-                            </Box>
-                        ))}
-                    </Box>
-                </Box>
-            )}
-        </Box>
-    )
 }
 
 /*SCHEME BEGIN*/
@@ -175,7 +108,7 @@ const Offer: IBlock = {
     image: `/pic/5aec67ad9e3e1ee17dc8717d1e23e8c5zXnwX.png`,
     value: DEF_VALUE,
     scheme,
-    view: OfferBlock,
+    view,
 }
 
 export default Offer

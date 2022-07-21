@@ -31,7 +31,11 @@ const GridBox = () => {
 const Feature1: React.FC<Partial<IFeature1>> = (props) => {
     const { value = DEF_VALUE } = props
 
-    const { title = DEF_VALUE.title, subtitle = DEF_VALUE.subtitle } = value
+    const {
+        title = DEF_VALUE.title,
+        subtitle = DEF_VALUE.subtitle,
+        description = DEF_VALUE.description,
+    } = value
 
     return (
         <Box align="center" fill="horizontal">
@@ -49,6 +53,7 @@ const Feature1: React.FC<Partial<IFeature1>> = (props) => {
                         >
                             <strong>{subtitle}</strong>
                         </Paragraph>
+
                         <Heading
                             color="dark-1"
                             level={2}
@@ -57,6 +62,7 @@ const Feature1: React.FC<Partial<IFeature1>> = (props) => {
                         >
                             {title}
                         </Heading>
+
                         <Paragraph
                             color="dark-2"
                             margin={{ top: "xsmall", bottom: "xsmall" }}
@@ -66,17 +72,10 @@ const Feature1: React.FC<Partial<IFeature1>> = (props) => {
                                 lineHeight: "30px",
                             }}
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
+                            {description}
                         </Paragraph>
                     </Box>
+
                     <Grid
                         justify="center"
                         fill="horizontal"

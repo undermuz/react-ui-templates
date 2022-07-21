@@ -8,6 +8,7 @@ import view from "./view"
 export interface IFeature1Value {
     title: string
     subtitle: string
+    description: string
 }
 
 export interface IFeature1 {
@@ -31,9 +32,15 @@ const scheme: IScheme = {
         },
         {
             name: "subtitle",
+            title: "Sub-title",
+            type: EnumSchemeItemType.Text,
+            def_value: DEF_VALUE.subtitle,
+        },
+        {
+            name: "description",
             title: "Description",
             type: EnumSchemeItemType.TextBlock,
-            def_value: DEF_VALUE.subtitle,
+            def_value: DEF_VALUE.description,
         },
     ],
     single: true,

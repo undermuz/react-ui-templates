@@ -1,104 +1,26 @@
-import { Box, Card, Grid, Heading, Paragraph, ResponsiveContext } from "grommet"
-import React, { Component, useContext } from "react"
-import {
-    EnumSchemeItemType,
-    IScheme,
-    IWidgetSettings,
-} from "../widget-builder/types"
+import { IScheme } from "@undermuz/react-json-form/build/types/types"
+import { EnumSchemeItemType } from "@undermuz/react-json-form"
+import { IBlock } from "@undermuz/react-page-builder/build/types/types"
+import GridText from "./view"
+import DEF_VALUE from "./defaults"
 
 const WidgetName = "GridText"
 const WidgetTitle = "Текстовая сетка"
 
-interface IGridTextValueAdvantage {
+export interface IGridTextValueAdvantage {
     title: string
     subtitle: string
     image?: string
 }
 
-interface IGridTextValue {
+export interface IGridTextValue {
     title: string
     list: IGridTextValueAdvantage[]
 }
 
-interface IGridText {
+export interface IGridText {
     id: number
     value: IGridTextValue
-}
-
-const DEF_VALUE_LIST = [
-    {
-        title: "Надежность",
-        subtitle:
-            "ываываа ываыа вы выа  аыаыавыаывавыаыва выа ывавыавыа вы авы аыва",
-    },
-    {
-        title: "Скорость",
-        subtitle:
-            "ываываа ываыа вы выа  аыаыавыаывавыаыва выа ывавыавыа вы авы аыва",
-    },
-    {
-        title: "Эффективность",
-        subtitle:
-            "ываываа ываыа вы выа  аыаыавыаывавыаыва выа ывавыавыа вы авы аыва",
-    },
-    {
-        title: "Цена",
-        subtitle:
-            "ываываа ываыа вы выа  аыаыавыаывавыаыва выа ывавыавыа вы авы аыва",
-    },
-    {
-        title: "Гарантия",
-        subtitle:
-            "ываываа ываыа вы выа  аыаыавыаывавыаыва выа ывавыавыа вы авы аыва",
-    },
-    {
-        title: "Справедливость",
-        subtitle:
-            "ываываа ываыа вы выа  аыаыавыаывавыаыва выа ывавыавыа вы авы аыва",
-    },
-]
-
-const DEF_VALUE = {
-    title: "Приемущества",
-    list: DEF_VALUE_LIST,
-}
-
-const GridText: React.FC<IGridText> = (props) => {
-    const { id = 0, value = DEF_VALUE } = props
-
-    const { title = "", list = [] } = value
-
-    const size = useContext(ResponsiveContext)
-
-    return (
-        <Box pad={"large"}>
-            <Box align="center" pad="large">
-                <h2>{title}</h2>
-            </Box>
-
-            <Box pad={"large"}>
-                <Grid columns={size !== "small" ? "small" : "100%"} gap="small">
-                    {list.map((item, index) => (
-                        <Card pad="medium" key={index}>
-                            {/* {Boolean(item.image) && (
-                                <div className="img">
-                                    <img src={item.image} />
-                                </div>
-                            )} */}
-
-                            <div>
-                                <Heading level={4}>{item.title}</Heading>
-
-                                <Paragraph size="small">
-                                    {item.subtitle}
-                                </Paragraph>
-                            </div>
-                        </Card>
-                    ))}
-                </Grid>
-            </Box>
-        </Box>
-    )
 }
 
 export const scheme: IScheme = {
@@ -144,7 +66,7 @@ export const scheme: IScheme = {
     name: WidgetName,
 }
 
-const setting: IWidgetSettings = {
+const setting: IBlock = {
     id: WidgetName,
     title: WidgetTitle,
     description: `Для преимуществ`,

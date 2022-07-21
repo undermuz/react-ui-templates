@@ -1,10 +1,6 @@
 import { Box, Button, Heading, Paragraph, Text, List } from "grommet"
-import React, {
-    MouseEventHandler,
-    PropsWithChildren,
-    PureComponent,
-} from "react"
-import styled from "styled-components"
+import React, { MouseEventHandler } from "react"
+
 import { IPrice1, IPrice1ValuePrices, IPrice1ValuePricesItem } from "."
 import DEF_VALUE from "./defaults"
 
@@ -92,7 +88,7 @@ const PriceItem: React.FC<IPriceItemProps> = ({
     )
 }
 
-const Price1: React.FC<IPrice1> = (props) => {
+const Price1: React.FC<Partial<IPrice1>> = (props) => {
     const {
         id = 0,
         value = DEF_VALUE,
