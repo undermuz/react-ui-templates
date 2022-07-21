@@ -4,10 +4,10 @@
   "version": "1.0.1",
   "description": "React library with grommet block templates",
   "exports": {
-    "./feature/1": {
-      "types": "./build/types/feature/1/index.d.ts",
-      "import": "./build/esm/feature/1/index.js",
-      "require": "./build/cjs/feature/1/index.js"
+    "./features/1": {
+      "types": "./build/types/features/1/index.d.ts",
+      "import": "./build/esm/features/1/index.js",
+      "require": "./build/cjs/features/1/index.js"
     },
     "./grid-text/1": {
       "types": "./build/types/grid-text/1/index.d.ts",
@@ -90,8 +90,8 @@
   },
   "peerDependencies": {
     "grommet": "^2.25.0",
-    "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
