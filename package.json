@@ -38,19 +38,19 @@
   },
   "typesVersions": {
     "*": {
-      "feature/*/": [
-        "build/types/feature/*/index.d.ts"
+      "features/*": [
+        "build/types/features/*/index.d.ts"
       ],
-      "grid-text/*/": [
+      "grid-text/*": [
         "build/types/grid-text/*/index.d.ts"
       ],
-      "news/*/": [
+      "news/*": [
         "build/types/news/*/index.d.ts"
       ],
-      "offer/*/": [
+      "offer/*": [
         "build/types/offer/*/index.d.ts"
       ],
-      "prices/*/": [
+      "prices/*": [
         "build/types/prices/*/index.d.ts"
       ]
     }
