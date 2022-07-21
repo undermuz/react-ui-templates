@@ -3,7 +3,7 @@ import DEF_VALUE from "./defaults";
 import view from "./view";
 /*SCHEME BEGIN*/
 var WidgetName = "Feature1";
-var WidgetTitle = "Feature 2";
+var WidgetTitle = "Feature 1";
 var scheme = {
     id: WidgetName,
     scheme: [

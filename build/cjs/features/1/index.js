@@ -7,7 +7,7 @@ var defaults_1 = tslib_1.__importDefault(require("./defaults"));
 var view_1 = tslib_1.__importDefault(require("./view"));
 /*SCHEME BEGIN*/
 var WidgetName = "Feature1";
-var WidgetTitle = "Feature 2";
+var WidgetTitle = "Feature 1";
 var scheme = {
     id: WidgetName,
     scheme: [
