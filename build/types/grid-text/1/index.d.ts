@@ -1,5 +1,5 @@
 import { IScheme } from "@undermuz/react-json-form/build/types/types";
-import { IBlock } from "@undermuz/react-page-builder/build/types/types";
+import { IBlock } from "../../types";
 export interface IGridTextValueAdvantage {
     title: string;
     subtitle: string;

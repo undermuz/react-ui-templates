@@ -1,6 +1,6 @@
 import { IScheme } from "@undermuz/react-json-form/build/types/types";
 import { MouseEventHandler } from "react";
-import { IBlock } from "@undermuz/react-page-builder/build/types/types";
+import { IBlock } from "../../types";
 export interface IBlog1ValueListItem {
     id: number;
     title: string;

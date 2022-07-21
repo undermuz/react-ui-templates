@@ -4,7 +4,7 @@ import { MouseEventHandler } from "react"
 
 import DEF_VALUE from "./defaults"
 import view from "./view"
-import { IBlock } from "@undermuz/react-page-builder/build/types/types"
+import { IBlock } from "../../types"
 
 export interface IBlog1ValueListItem {
     id: number

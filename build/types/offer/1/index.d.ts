@@ -1,4 +1,4 @@
-import { IBlock } from "@undermuz/react-page-builder/build/types/types";
+import { IBlock } from "../../types";
 import { MouseEventHandler } from "react";
 export interface IOfferBlockValueAdvantage {
     title: string;

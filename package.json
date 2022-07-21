@@ -84,7 +84,6 @@
   "license": "MIT",
   "dependencies": {
     "@undermuz/react-json-form": "github:undermuz/react-json-form",
-    "@undermuz/react-page-builder": "github:undermuz/react-page-builder",
     "styled-components": "^5.3.5",
     "underscore": "^1.13.4"
   },

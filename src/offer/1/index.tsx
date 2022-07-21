@@ -1,7 +1,7 @@
 // SYSTEM
 import { EnumSchemeItemType } from "@undermuz/react-json-form"
 import { IScheme } from "@undermuz/react-json-form/build/types/types"
-import { IBlock } from "@undermuz/react-page-builder/build/types/types"
+import { IBlock } from "../../types"
 
 import { MouseEventHandler } from "react"
 import DEF_VALUE from "./defaults"
