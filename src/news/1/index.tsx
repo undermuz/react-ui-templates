@@ -1,12 +1,10 @@
-import {
-    EnumSchemeItemType,
-    IScheme,
-    IWidgetSettings,
-} from "containers/build/landing/widget-builder/types"
+import { IScheme } from "@undermuz/react-json-form/build/types/types"
+import { EnumSchemeItemType } from "@undermuz/react-json-form"
 import { MouseEventHandler } from "react"
 
 import DEF_VALUE from "./defaults"
 import view from "./view"
+import { IBlock } from "@undermuz/react-page-builder/build/types/types"
 
 export interface IBlog1ValueListItem {
     id: number
@@ -89,7 +87,7 @@ const scheme: IScheme = {
     name: WidgetName,
 }
 
-const setting: IWidgetSettings = {
+const setting: IBlock = {
     id: WidgetName,
     title: WidgetTitle,
     description: `Блог/Новости 1`,

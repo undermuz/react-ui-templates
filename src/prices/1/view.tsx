@@ -66,6 +66,7 @@ const PriceItem: React.FC<IPriceItemProps> = ({
                     border={false}
                     pad={{ vertical: "xxsmall" }}
                 >
+                    {/*@ts-ignore*/}
                     {(listItem: IPrice1ValuePricesItem) => {
                         return <Text key={listItem.id}>{listItem.title}</Text>
                     }}

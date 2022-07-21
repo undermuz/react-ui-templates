@@ -65,6 +65,7 @@ const PriceItem: React.FC<IPriceItemProps> = ({
                     pad={{ vertical: "xxsmall" }}
                     style={{ columns: 2 }}
                 >
+                    {/* @ts-ignore */}
                     {(listItem: IPrice2ValuePricesItem) => {
                         return (
                             <Box direction="row">

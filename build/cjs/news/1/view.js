@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = require("tslib");
 var jsx_runtime_1 = require("react/jsx-runtime");
-var grommet_1 = require("grommet");
 var styled_components_1 = tslib_1.__importDefault(require("styled-components"));
+var grommet_1 = require("grommet");
 var defaults_1 = tslib_1.__importDefault(require("./defaults"));
 var exampleButtonClick = function () {
     alert("click");

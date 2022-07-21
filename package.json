@@ -4,25 +4,54 @@
   "version": "1.0.1",
   "description": "React library with grommet block templates",
   "exports": {
-    "./blocks-editor": {
-      "types": "./build/types/blocks-editor/index.d.ts",
-      "import": "./build/esm/blocks-editor/index.js",
-      "require": "./build/cjs/blocks-editor/index.js"
+    "./feature/1": {
+      "types": "./build/types/feature/1/index.d.ts",
+      "import": "./build/esm/feature/1/index.js",
+      "require": "./build/cjs/feature/1/index.js"
     },
-    "./blocks-view": {
-      "types": "./build/types/blocks-view/index.d.ts",
-      "import": "./build/esm/blocks-view/index.js",
-      "require": "./build/cjs/blocks-view/index.js"
+    "./grid-text/1": {
+      "types": "./build/types/grid-text/1/index.d.ts",
+      "import": "./build/esm/grid-text/1/index.js",
+      "require": "./build/cjs/grid-text/1/index.js"
+    },
+    "./news/1": {
+      "types": "./build/types/news/1/index.d.ts",
+      "import": "./build/esm/news/1/index.js",
+      "require": "./build/cjs/news/1/index.js"
+    },
+    "./offer/1": {
+      "types": "./build/types/offer/1/index.d.ts",
+      "import": "./build/esm/offer/1/index.js",
+      "require": "./build/cjs/offer/1/index.js"
+    },
+    "./prices/1": {
+      "types": "./build/types/prices/1/index.d.ts",
+      "import": "./build/esm/prices/1/index.js",
+      "require": "./build/cjs/prices/1/index.js"
+    },
+    "./prices/2": {
+      "types": "./build/types/prices/2/index.d.ts",
+      "import": "./build/esm/prices/2/index.js",
+      "require": "./build/cjs/prices/2/index.js"
     },
     "./package.json": "./package.json"
   },
   "typesVersions": {
     "*": {
-      "blocks-editor/": [
-        "build/types/blocks-editor/index.d.ts"
+      "feature/*/": [
+        "build/types/feature/*/index.d.ts"
       ],
-      "blocks-view/": [
-        "build/types/blocks-view/index.d.ts"
+      "grid-text/*/": [
+        "build/types/grid-text/*/index.d.ts"
+      ],
+      "news/*/": [
+        "build/types/news/*/index.d.ts"
+      ],
+      "offer/*/": [
+        "build/types/offer/*/index.d.ts"
+      ],
+      "prices/*/": [
+        "build/types/prices/*/index.d.ts"
       ]
     }
   },

@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.scheme = void 0;
 var tslib_1 = require("tslib");
-var types_1 = require("containers/build/landing/widget-builder/types");
+var react_json_form_1 = require("@undermuz/react-json-form");
 var defaults_1 = tslib_1.__importDefault(require("./defaults"));
 var view_1 = tslib_1.__importDefault(require("./view"));
 /*SCHEME BEGIN*/
@@ -14,44 +14,44 @@ var scheme = {
         {
             name: "title",
             title: "Заголовок",
-            type: types_1.EnumSchemeItemType.Text,
+            type: react_json_form_1.EnumSchemeItemType.Text,
             def_value: defaults_1.default.title,
         },
         {
             name: "subtitle",
             title: "Подзаголовок",
-            type: types_1.EnumSchemeItemType.TextBlock,
+            type: react_json_form_1.EnumSchemeItemType.TextBlock,
             def_value: defaults_1.default.subtitle,
         },
         {
             name: "list",
             title: "Новости",
-            type: types_1.EnumSchemeItemType.Widget,
+            type: react_json_form_1.EnumSchemeItemType.Widget,
             multiple: true,
             def_value: defaults_1.default.list,
             scheme: [
                 {
                     name: "title",
                     title: "Заголовок",
-                    type: types_1.EnumSchemeItemType.Text,
+                    type: react_json_form_1.EnumSchemeItemType.Text,
                     def_value: "",
                 },
                 {
                     name: "description",
                     title: "Описание",
-                    type: types_1.EnumSchemeItemType.Text,
+                    type: react_json_form_1.EnumSchemeItemType.Text,
                     def_value: "",
                 },
                 {
                     name: "date",
                     title: "Дата",
-                    type: types_1.EnumSchemeItemType.Text,
+                    type: react_json_form_1.EnumSchemeItemType.Text,
                     def_value: "",
                 },
                 {
                     name: "is_active",
                     title: "Активная?",
-                    type: types_1.EnumSchemeItemType.Checkbox,
+                    type: react_json_form_1.EnumSchemeItemType.Checkbox,
                     def_value: false,
                 },
             ],
