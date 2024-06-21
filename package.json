@@ -83,14 +83,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@undermuz/react-json-form": "github:undermuz/react-json-form",
+    "@undermuz/react-json-form": "^2.0.6",
     "styled-components": "^5.3.5",
     "underscore": "^1.13.4"
   },
   "peerDependencies": {
     "grommet": "^2.25.0",
-    "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",

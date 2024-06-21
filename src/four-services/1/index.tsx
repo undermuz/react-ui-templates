@@ -1,7 +1,7 @@
 import { MouseEventHandler } from "react"
 
 import { EnumSchemeItemType } from "@undermuz/react-json-form"
-import { IScheme } from "@undermuz/react-json-form/build/types/types"
+import { IScheme } from "@undermuz/react-json-form"
 import { IBlock } from "../../types"
 
 import DEF_VALUE from "./defaults"

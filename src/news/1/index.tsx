@@ -1,4 +1,4 @@
-import { IScheme } from "@undermuz/react-json-form/build/types/types"
+import { IScheme } from "@undermuz/react-json-form"
 import { EnumSchemeItemType } from "@undermuz/react-json-form"
 import { MouseEventHandler } from "react"
 
