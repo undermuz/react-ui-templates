@@ -10,7 +10,6 @@
         "outDir": "./build",
         "forceConsistentCasingInFileNames": true,
         "importHelpers": true,
-        "jsx": "react-jsx",
         "declaration": false,
         "strict": true,
         "lib": ["esnext", "dom.iterable", "dom"],

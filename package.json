@@ -71,10 +71,10 @@
     "build:types": "tsc -p config/tsconfig.types.json",
     "build:umd": "webpack --config config/webpack.config.js",
     "clean": "node tools/cleanup",
-    "predeploy": "npm run build-storybook",
-    "deploy-storybook": "gh-pages -d storybook-static",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "predeploy": "npm run storybook:build",
+    "sb:deploy": "gh-pages -d storybook-static",
+    "sb:dev": "storybook dev -p 6008",
+    "sb:build": "storybook build"
   },
   "author": {
     "name": "undermuz",
@@ -95,15 +95,17 @@
   "devDependencies": {
     "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "^7.17.12",
-    "@storybook/addon-actions": "^6.5.9",
-    "@storybook/addon-essentials": "^6.5.9",
-    "@storybook/addon-interactions": "^6.5.9",
-    "@storybook/addon-links": "^6.5.9",
-    "@storybook/builder-webpack5": "^6.5.9",
-    "@storybook/manager-webpack5": "^6.5.9",
-    "@storybook/react": "^6.5.9",
-    "@storybook/testing-library": "^0.0.13",
+    "@chromatic-com/storybook": "^1.5.0",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/addon-onboarding": "^8.1.10",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/react-vite": "^8.1.10",
+    "@storybook/test": "^8.1.10",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "12.0.0",
     "@testing-library/react-hooks": "7.0.1",
@@ -114,26 +116,20 @@
     "@types/underscore": "^1.11.4",
     "@typescript-eslint/eslint-plugin": "^5.30.6",
     "@typescript-eslint/parser": "^5.30.6",
-    "babel-jest": "^28.1.1",
-    "babel-loader": "^8.2.5",
-    "css-loader": "^6.7.1",
+    "@vitejs/plugin-react": "^4.3.1",
     "eslint": "^8.19.0",
     "eslint-plugin-jest-dom": "^4.0.2",
     "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-storybook": "^0.8.0",
     "gh-pages": "^4.0.0",
     "jest": "^28.1.1",
     "jest-cli": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
-    "less": "^4.1.3",
-    "less-loader": "^11.0.0",
-    "storybook": "^6.5.9",
-    "storybook-preset-less": "^1.1.2",
-    "style-loader": "^3.3.1",
-    "ts-loader": "^9.2.8",
-    "tslib": "^2.4.0",
-    "typescript": "^4.5.5",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2"
+    "storybook": "^8.1.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
   },
   "keywords": [
     "react",
@@ -141,5 +137,10 @@
     "forms",
     "use-form",
     "hook"
-  ]
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
 }
