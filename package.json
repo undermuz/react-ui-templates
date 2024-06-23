@@ -1,8 +1,8 @@
 {
-  "name": "@undermuz/grommet-block-templates",
-  "homepage": "http://undermuz.github.io/grommet-block-templates",
+  "name": "@undermuz/ui-block-templates",
+  "homepage": "http://undermuz.github.io/ui-block-templates",
   "version": "1.0.1",
-  "description": "React library with grommet block templates",
+  "description": "React library with ui block templates",
   "exports": {
     "./features/1": {
       "types": "./build/types/features/1/index.d.ts",
@@ -83,12 +83,16 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "@undermuz/react-json-form": "^2.0.6",
+    "framer-motion": "^11.2.11",
     "styled-components": "^5.3.5",
     "underscore": "^1.13.4"
   },
   "peerDependencies": {
-    "grommet": "^2.25.0",
+    "grommet": "^2.38.0",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -125,6 +129,7 @@
     "jest": "^28.1.1",
     "jest-cli": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
+    "prettier": "^3.3.2",
     "storybook": "^8.1.10",
     "ts-loader": "^9.5.1",
     "typescript": "^5.5.2",

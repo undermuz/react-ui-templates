@@ -1,8 +1,8 @@
 import { EnumSchemeItemType } from "@undermuz/react-json-form"
 import { IScheme } from "@undermuz/react-json-form"
-import { IBlock } from "../../types"
+import { IBlock } from "../../../types"
 
-import DEF_VALUE from "./defaults"
+import DEF_VALUE from "../defaults"
 import view from "./view"
 
 export interface IFeature1Value {
@@ -43,10 +43,8 @@ const scheme: IScheme = {
             def_value: DEF_VALUE.description,
         },
     ],
-    single: true,
     multiple: false,
     title: WidgetTitle,
-    name: WidgetName,
 }
 
 const setting: IBlock = {

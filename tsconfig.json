@@ -12,6 +12,7 @@
         "importHelpers": true,
         "declaration": false,
         "strict": true,
+        "jsx": "react-jsx",
         "lib": ["esnext", "dom.iterable", "dom"],
         "sourceMap": false,
         "noImplicitAny": true,

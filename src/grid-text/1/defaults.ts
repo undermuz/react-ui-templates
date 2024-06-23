@@ -32,7 +32,7 @@ const DEF_VALUE_LIST = [
 ]
 
 const DEF_VALUE = {
-    title: "Приемущества",
+    title: "Преимущества",
     list: DEF_VALUE_LIST,
 }
 

@@ -4,7 +4,7 @@ import React from "react"
 import styled from "styled-components"
 
 import { IFeature1 } from "."
-import DEF_VALUE from "./defaults"
+import DEF_VALUE from "../defaults"
 
 const UiImageBox = styled(Box)`
     aspect-ratio: 1;
@@ -16,7 +16,7 @@ const ImageBox = () => {
             fill="horizontal"
             background={{ color: "light-3" }}
             round={"small"}
-        ></UiImageBox>
+        />
     )
 }
 
@@ -28,7 +28,7 @@ const GridBox = () => {
     )
 }
 
-const Feature1: React.FC<Partial<IFeature1>> = (props) => {
+const GrommetFeature1: React.FC<Partial<IFeature1>> = (props) => {
     const { value = DEF_VALUE } = props
 
     const {
@@ -41,27 +41,33 @@ const Feature1: React.FC<Partial<IFeature1>> = (props) => {
         <Box align="center" fill="horizontal">
             <Box width={"xlarge"}>
                 <Box direction="row" gap="xlarge" pad={{ vertical: "medium" }}>
-                    <Box direction="column" justify="center" fill="horizontal">
-                        <Paragraph
-                            color="dark-3"
-                            fill
-                            size="small"
-                            margin={{ top: "none", bottom: "medium" }}
-                            style={{
-                                textTransform: "uppercase",
-                            }}
+                    <Box
+                        direction="column"
+                        justify="center"
+                        fill="horizontal"
+                        gap={"medium"}
+                    >
+                        <Box
+                            direction="column"
+                            justify="center"
+                            fill="horizontal"
+                            gap={"xxsmall"}
                         >
-                            <strong>{subtitle}</strong>
-                        </Paragraph>
+                            <Paragraph
+                                color="dark-3"
+                                fill
+                                size="small"
+                                style={{
+                                    textTransform: "uppercase",
+                                }}
+                            >
+                                <strong>{subtitle}</strong>
+                            </Paragraph>
 
-                        <Heading
-                            color="dark-1"
-                            level={2}
-                            size="medium"
-                            margin={{ top: "none", bottom: "medium" }}
-                        >
-                            {title}
-                        </Heading>
+                            <Heading color="dark-1" level={2} size="medium">
+                                {title}
+                            </Heading>
+                        </Box>
 
                         <Paragraph
                             color="dark-2"
@@ -94,4 +100,4 @@ const Feature1: React.FC<Partial<IFeature1>> = (props) => {
     )
 }
 
-export default Feature1
+export default GrommetFeature1

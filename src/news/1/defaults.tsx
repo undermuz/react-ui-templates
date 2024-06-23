@@ -28,7 +28,7 @@ export const DEF_VALUE_LIST: IBlog1ValueListItem[] = [
 ]
 
 export const DEF_VALUE: IBlog1Value = {
-    title: "Мы лучшие в мирdddе!",
+    title: "Мы лучшие в мире!",
     subtitle: "Закажите сейчас и получите скидку 50%",
     list: DEF_VALUE_LIST,
 }

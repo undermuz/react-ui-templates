@@ -1,8 +1,8 @@
-import { IFeature1Value } from "."
+import { IFeature1Value } from "./grommet"
 
 export const DEF_VALUE: IFeature1Value = {
-    title: "Мы лучшая в мир компания!",
-    subtitle: "Lorem ipsum dolor sit amet",
+    title: "Взгляните на наши товары",
+    subtitle: "Покупайте и получайте больше",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing
     elit, sed do eiusmod tempor incididunt ut labore et
     dolore magna aliqua. Ut enim ad minim veniam, quis

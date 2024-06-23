@@ -104,9 +104,9 @@ const Price1: React.FC<Partial<IPrice1>> = (props) => {
     } = value
 
     return (
-        <Box background={{ color: "light-3" }} align="center">
-            <Box width={"xxlarge"}>
-                <Box pad="medium" direction="column" align="center">
+        <Box background={{ color: "light-3" }} align="center" pad={"xlarge"}>
+            <Box width={"xxlarge"} gap={"medium"}>
+                <Box pad="medium" direction="column" align="center" gap="small">
                     <Box align="center">
                         <Heading level={2}>{title}</Heading>
                     </Box>

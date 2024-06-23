@@ -78,6 +78,7 @@ const BlogItemBig: React.FC<IPriceItemProps> = ({
             onClick={onButtonClick}
             round="small"
             overflow="hidden"
+            pad={"xlarge"}
         >
             <Grid width="100%" columns={["60%", "1fr"]}>
                 <Box fill="vertical" background={{ color: "neutral-1" }}></Box>
@@ -121,34 +122,31 @@ const Blog1: React.FC<Partial<IBlog1>> = (props) => {
     } = value
 
     return (
-        <Box background={{ color: "light-3" }} align="center">
-            <Box width={"xlarge"}>
-                <Box
-                    pad={{ vertical: "small", horizontal: "medium" }}
-                    direction="column"
-                    align="start"
-                >
+        <Box background={{ color: "light-3" }} align="center" pad={"xlarge"}>
+            <Box width={"xlarge"} gap={"medium"}>
+                <Box direction="column" align="start" gap={"small"}>
                     <Heading level={2} margin={{ vertical: "xsmall" }}>
                         {title}
                     </Heading>
+
                     <Paragraph margin={{ vertical: "xsmall" }}>
                         {subtitle}
                     </Paragraph>
                 </Box>
 
                 {list.length > 0 && (
-                    <Box pad={{ vertical: "small", horizontal: "medium" }}>
+                    <Box>
                         <Grid
                             columns={["1fr", "30%"]}
                             rows={"small"}
-                            gap="small"
+                            gap="medium"
                         >
                             {list.map((item) =>
                                 item.is_active ? (
                                     <BlogItemBig key={item.id} data={item} />
                                 ) : (
                                     <BlogItemSmall key={item.id} data={item} />
-                                )
+                                ),
                             )}
                         </Grid>
                     </Box>

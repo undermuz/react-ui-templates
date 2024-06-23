@@ -11,27 +11,33 @@ const GridText: React.FC<Partial<IGridText>> = (props) => {
     const size = useContext(ResponsiveContext)
 
     return (
-        <Box pad={"large"}>
-            <Box align="center" pad="large">
-                <h2>{title}</h2>
+        <Box pad={"xlarge"} gap={"large"}>
+            <Box align="center">
+                <Heading level={2}>{title}</Heading>
             </Box>
 
-            <Box pad={"large"}>
-                <Grid columns={size !== "small" ? "small" : "100%"} gap="small">
-                    {list.map((item, index) => (
-                        <Box
-                            pad="medium"
-                            key={index}
-                            background={{ color: "light-2" }}
-                            round={"small"}
-                        >
-                            <Heading level={4}>{item.title}</Heading>
+            <Grid
+                columns={size !== "small" ? list.map(() => "1fr") : "100%"}
+                gap="small"
+                align="center"
+                justify="center"
+            >
+                {list.map((item, index) => (
+                    <Box
+                        pad="medium"
+                        key={index}
+                        background={{ color: "light-2" }}
+                        round={"small"}
+                        height={"small"}
+                        direction="column"
+                        justify="around"
+                    >
+                        <Heading level={3}>{item.title}</Heading>
 
-                            <Paragraph size="small">{item.subtitle}</Paragraph>
-                        </Box>
-                    ))}
-                </Grid>
-            </Box>
+                        <Paragraph size="small">{item.subtitle}</Paragraph>
+                    </Box>
+                ))}
+            </Grid>
         </Box>
     )
 }

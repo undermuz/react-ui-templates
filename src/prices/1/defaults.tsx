@@ -88,7 +88,7 @@ export const DEF_VALUE_PRICES: IPrice1ValuePrices[] = [
 ]
 
 export const DEF_VALUE: IPrice1Value = {
-    title: "Мы лучшие в мирdddе!",
+    title: "Мы лучшие в мире!",
     subtitle: "Закажите сейчас и получите скидку 50%",
     button_text: "Купить",
     prices: DEF_VALUE_PRICES,

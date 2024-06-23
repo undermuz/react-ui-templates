@@ -1,16 +1,17 @@
-
 import type { Meta, StoryObj } from "@storybook/react"
-import { AllBlocksStory } from "./AllBlocksStory";
+import { AllBlocksStory } from "./AllBlocksStory"
 
 export default {
     title: "Example/All blocks",
     component: AllBlocksStory,
 } as Meta<typeof AllBlocksStory>
 
-type Story = StoryObj<typeof AllBlocksStory>;
+type Story = StoryObj<typeof AllBlocksStory>
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary: Story = {
-  args: {
-  },
-};
+export const GrommetBlocks: Story = {
+    args: { type: "grommet" },
+}
+
+export const ChakraBlocks: Story = {
+    args: { type: "chakra" },
+}

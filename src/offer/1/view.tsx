@@ -22,7 +22,7 @@ const Offer: FC<Partial<IOfferBlock>> = (props) => {
 
     return (
         <Box background={{ color: "neutral-2", opacity: true }}>
-            <Box pad="xlarge" align="center">
+            <Box pad="xlarge" align="center" gap={"medium"}>
                 <Heading>{title}</Heading>
 
                 <Paragraph>{subtitle}</Paragraph>
@@ -40,13 +40,13 @@ const Offer: FC<Partial<IOfferBlock>> = (props) => {
             </Box>
 
             {show_adv && advantage.length > 0 && (
-                <Box pad="large" background={{ color: "neutral-2" }}>
+                <Box pad="medium" background={{ color: "neutral-2" }}>
                     <Box direction="row" justify="around">
                         {advantage.map((item, index) => (
                             <Box key={index}>
                                 <img src={item.image} alt="" />
 
-                                <span>{item.title}</span>
+                                <strong>{item.title}</strong>
                             </Box>
                         ))}
                     </Box>
