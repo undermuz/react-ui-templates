@@ -39,7 +39,13 @@ const ChakraUIFeature1: React.FC<Partial<IFeature1>> = (props) => {
     } = value
 
     return (
-        <Container maxW="container.xl">
+        <Container
+            maxW="container.xl"
+            bgColor={"bg-block"}
+            p={"block.pad.1"}
+            paddingTop={"block.pad.1.top"}
+            paddingBottom={"block.pad.1.bot"}
+        >
             <HStack spacing={100} p={6}>
                 <VStack
                     justify="center"

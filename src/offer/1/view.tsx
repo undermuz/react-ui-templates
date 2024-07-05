@@ -8,7 +8,7 @@ const exampleButtonClick = () => {
     alert("click")
 }
 
-const Offer: FC<Partial<IOfferBlock>> = (props) => {
+const GrommetOffer1: FC<Partial<IOfferBlock>> = (props) => {
     const { value = DEF_VALUE, onButtonClick = exampleButtonClick } = props
 
     const {
@@ -56,4 +56,4 @@ const Offer: FC<Partial<IOfferBlock>> = (props) => {
     )
 }
 
-export default Offer
+export default GrommetOffer1

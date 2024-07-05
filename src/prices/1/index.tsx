@@ -97,10 +97,8 @@ const scheme: IScheme = {
             ],
         },
     ],
-    single: true,
     multiple: false,
     title: WidgetTitle,
-    name: WidgetName,
 }
 
 const setting: IBlock = {

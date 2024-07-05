@@ -30,28 +30,52 @@ const ChakraUIOffer2: FC<Partial<IOfferBlock>> = (props) => {
     } = value
 
     return (
-        <Container maxW="container.xl">
+        <Container
+            maxW="container.xl"
+            bgColor={"bg-block"}
+            p={"block.pad.1"}
+            paddingTop={"block.pad.1.top"}
+            paddingBottom={"block.pad.1.bot"}
+        >
             <Box
-                rounded={30}
+                rounded={"1rem"}
                 boxShadow={"md"}
-                p={10}
                 bgColor={"gray.900"}
                 color={"gray.100"}
             >
-                <Grid templateColumns="6fr 3fr" gap={20}>
-                    <VStack align={"stretch"} spacing={6}>
-                        <Heading>{title}</Heading>
+                <Grid templateColumns="7fr 3fr" gap={20}>
+                    <VStack
+                        align={"stretch"}
+                        spacing={"3.25rem"}
+                        pl={"5rem"}
+                        pt="2.5rem"
+                    >
+                        <VStack align={"stretch"} spacing={"1.25rem"}>
+                            <Heading as={"h1"} fontSize={"block.title.1"}>
+                                {title}
+                            </Heading>
 
-                        <Text>{subtitle}</Text>
+                            <Text fontSize={"block.desc.1"}>{subtitle}</Text>
+                        </VStack>
 
                         {show_adv && advantage.length > 0 && (
-                            <HStack spacing={8}>
+                            <HStack spacing={"2.25rem"}>
                                 {advantage.map((item, index) => (
                                     <VStack align={"stretch"} key={index}>
-                                        <Text fontSize={"xs"}>
+                                        <Text
+                                            fontSize={"0.875rem"}
+                                            fontFamily={"Rubik"}
+                                        >
                                             {item.subtitle}
                                         </Text>
-                                        <Text as={"strong"}>{item.title}</Text>
+                                        <Text
+                                            as={"strong"}
+                                            fontFamily={"Montserrat"}
+                                            fontWeight={"700"}
+                                            fontSize={"1.25rem"}
+                                        >
+                                            {item.title}
+                                        </Text>
                                     </VStack>
                                 ))}
                             </HStack>

@@ -36,7 +36,6 @@ const WidgetTitle = "Оффер"
 
 const scheme: IScheme = {
     id: WidgetName,
-    name: WidgetName,
     scheme: [
         {
             name: "title",
@@ -96,7 +95,6 @@ const scheme: IScheme = {
             ],
         },
     ],
-    single: true,
     multiple: false,
     title: WidgetTitle,
 }

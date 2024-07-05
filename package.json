@@ -1,76 +1,118 @@
 {
-  "name": "@undermuz/ui-block-templates",
-  "homepage": "http://undermuz.github.io/ui-block-templates",
-  "version": "1.0.1",
+  "name": "@undermuz/react-ui-templates",
+  "homepage": "http://undermuz.github.io/react-ui-templates",
+  "version": "0.1.0",
   "description": "React library with ui block templates",
   "exports": {
-    "./features/1": {
-      "types": "./build/types/features/1/index.d.ts",
-      "import": "./build/esm/features/1/index.js",
-      "require": "./build/cjs/features/1/index.js"
+    "./features/1/chakra": {
+      "types": "./dist/features/1/chakra/index.d.ts",
+      "import": "./dist/features/1/chakra/index.mjs",
+      "require": "./dist/features/1/chakra/index.js"
     },
-    "./grid-text/1": {
-      "types": "./build/types/grid-text/1/index.d.ts",
-      "import": "./build/esm/grid-text/1/index.js",
-      "require": "./build/cjs/grid-text/1/index.js"
+    "./features/1/grommet": {
+      "types": "./dist/features/1/grommet/index.d.ts",
+      "import": "./dist/features/1/grommet/index.mjs",
+      "require": "./dist/features/1/grommet/index.js"
     },
-    "./news/1": {
-      "types": "./build/types/news/1/index.d.ts",
-      "import": "./build/esm/news/1/index.js",
-      "require": "./build/cjs/news/1/index.js"
+    "./features/2/grommet": {
+      "types": "./dist/features/2/grommet/index.d.ts",
+      "import": "./dist/features/2/grommet/index.mjs",
+      "require": "./dist/features/2/grommet/index.js"
     },
-    "./offer/1": {
-      "types": "./build/types/offer/1/index.d.ts",
-      "import": "./build/esm/offer/1/index.js",
-      "require": "./build/cjs/offer/1/index.js"
+    "./four-services/1/grommet": {
+      "types": "./dist/four-services/1/grommet/index.d.ts",
+      "import": "./dist/four-services/1/grommet/index.mjs",
+      "require": "./dist/four-services/1/grommet/index.js"
     },
-    "./prices/1": {
-      "types": "./build/types/prices/1/index.d.ts",
-      "import": "./build/esm/prices/1/index.js",
-      "require": "./build/cjs/prices/1/index.js"
+    "./grid-text/1/chakra": {
+      "types": "./dist/grid-text/1/chakra/index.d.ts",
+      "import": "./dist/grid-text/1/chakra/index.mjs",
+      "require": "./dist/grid-text/1/chakra/index.js"
     },
-    "./prices/2": {
-      "types": "./build/types/prices/2/index.d.ts",
-      "import": "./build/esm/prices/2/index.js",
-      "require": "./build/cjs/prices/2/index.js"
+    "./grid-text/1/grommet": {
+      "types": "./dist/grid-text/1/grommet/index.d.ts",
+      "import": "./dist/grid-text/1/grommet/index.mjs",
+      "require": "./dist/grid-text/1/grommet/index.js"
+    },
+    "./news/1/grommet": {
+      "types": "./dist/news/1/grommet/index.d.ts",
+      "import": "./dist/news/1/grommet/index.mjs",
+      "require": "./dist/news/1/grommet/index.js"
+    },
+    "./offer/1/chakra": {
+      "types": "./dist/offer/1/chakra/index.d.ts",
+      "import": "./dist/offer/1/chakra/index.mjs",
+      "require": "./dist/offer/1/chakra/index.js"
+    },
+    "./offer/1/grommet": {
+      "types": "./dist/offer/1/grommet/index.d.ts",
+      "import": "./dist/offer/1/grommet/index.mjs",
+      "require": "./dist/offer/1/grommet/index.js"
+    },
+    "./offer/2/chakra": {
+      "types": "./dist/offer/2/chakra/index.d.ts",
+      "import": "./dist/offer/2/chakra/index.mjs",
+      "require": "./dist/offer/2/chakra/index.js"
+    },
+    "./prices/1/grommet": {
+      "types": "./dist/prices/1/index.d.ts",
+      "import": "./dist/prices/1/index.mjs",
+      "require": "./dist/prices/1/index.js"
+    },
+    "./prices/2/grommet": {
+      "types": "./dist/prices/2/index.d.ts",
+      "import": "./dist/prices/2/index.mjs",
+      "require": "./dist/prices/2/index.js"
+    },
+    "./portfolio/1/chakra": {
+      "types": "./dist/portfolio/1/chakra/index.d.ts",
+      "import": "./dist/portfolio/1/chakra/index.mjs",
+      "require": "./dist/portfolio/1/chakra/index.js"
+    },
+    "./stepper/1/chakra": {
+      "types": "./dist/stepper/1/chakra/index.d.ts",
+      "import": "./dist/stepper/1/chakra/index.mjs",
+      "require": "./dist/stepper/1/chakra/index.js"
+    },
+    "./themes/chakra": {
+      "types": "./dist/themes/chakra/index.d.ts",
+      "import": "./dist/themes/chakra/index.mjs",
+      "require": "./dist/themes/chakra/index.js"
     },
     "./package.json": "./package.json"
   },
   "typesVersions": {
     "*": {
       "features/*": [
-        "build/types/features/*/index.d.ts"
+        "dist/features/*/index.d.ts"
       ],
       "grid-text/*": [
-        "build/types/grid-text/*/index.d.ts"
+        "dist/grid-text/*/index.d.ts"
       ],
       "news/*": [
-        "build/types/news/*/index.d.ts"
+        "dist/news/*/index.d.ts"
       ],
       "offer/*": [
-        "build/types/offer/*/index.d.ts"
+        "dist/offer/*/index.d.ts"
       ],
       "prices/*": [
-        "build/types/prices/*/index.d.ts"
+        "dist/prices/*/index.d.ts"
       ]
     }
   },
   "sideEffects": false,
   "files": [
-    "build/cjs/",
-    "build/esm/",
-    "build/types/"
+    "dist/",
+    "dismt/",
+    "dist/"
   ],
   "scripts": {
     "test": "jest",
     "lint": "eslint ./src --ext .ts .tsx",
     "watch": "tsc -w -p config/tsconfig.esm.json",
-    "build": "node tools/cleanup && npm run build:cjs && npm run build:esm && npm run build:types",
-    "build:cjs": "tsc -p config/tsconfig.cjs.json",
-    "build:esm": "tsc -p config/tsconfig.esm.json",
-    "build:types": "tsc -p config/tsconfig.types.json",
-    "build:umd": "webpack --config config/webpack.config.js",
     "clean": "node tools/cleanup",
+    "build": "npm run build:tsup",
+    "build:tsup": "tsup",
     "predeploy": "npm run storybook:build",
     "sb:deploy": "gh-pages -d storybook-static",
     "sb:dev": "storybook dev -p 6008",
@@ -102,6 +144,7 @@
     "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "^7.17.12",
     "@chromatic-com/storybook": "^1.5.0",
+    "@microsoft/api-extractor": "^7.47.0",
     "@storybook/addon-essentials": "^8.1.10",
     "@storybook/addon-interactions": "^8.1.10",
     "@storybook/addon-links": "^8.1.10",
@@ -109,11 +152,6 @@
     "@storybook/blocks": "^8.1.10",
     "@storybook/react": "^8.1.10",
     "@storybook/react-vite": "^8.1.10",
-    "@storybook/test": "^8.1.10",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "12.0.0",
-    "@testing-library/react-hooks": "7.0.1",
-    "@testing-library/user-event": "13.1.9",
     "@types/react": "^18.0.5",
     "@types/react-datepicker": "^4.4.2",
     "@types/styled-components": "^5.1.25",
@@ -121,20 +159,16 @@
     "@typescript-eslint/eslint-plugin": "^5.30.6",
     "@typescript-eslint/parser": "^5.30.6",
     "@vitejs/plugin-react": "^4.3.1",
+    "esbuild-plugin-file-path-extensions": "^2.1.2",
     "eslint": "^8.19.0",
-    "eslint-plugin-jest-dom": "^4.0.2",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-storybook": "^0.8.0",
     "gh-pages": "^4.0.0",
-    "jest": "^28.1.1",
-    "jest-cli": "^28.1.1",
-    "jest-environment-jsdom": "^28.1.1",
     "prettier": "^3.3.2",
     "storybook": "^8.1.10",
     "ts-loader": "^9.5.1",
-    "typescript": "^5.5.2",
-    "webpack": "^5.92.1",
-    "webpack-cli": "^5.1.4"
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.2"
   },
   "keywords": [
     "react",
@@ -147,5 +181,6 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  }
+  },
+  "private": false
 }

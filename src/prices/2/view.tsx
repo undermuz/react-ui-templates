@@ -60,7 +60,6 @@ const PriceItem: React.FC<IPriceItemProps> = ({
             <Box basis="2/4" align="center" alignContent="center">
                 <List
                     data={list}
-                    basis="1/2"
                     border={false}
                     pad={{ vertical: "xxsmall" }}
                     style={{ columns: 2 }}

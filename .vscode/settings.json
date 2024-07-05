@@ -1,3 +1,9 @@
 {
-    "typescript.tsdk": "node_modules\\typescript\\lib"
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "VsCodeTaskButtons.tasks": [
+        {
+            "label": "🚀 Storybook: Dev",
+            "task": "Storybook: Dev"
+        },
+    ],
 }

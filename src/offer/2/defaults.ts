@@ -1,7 +1,7 @@
 const DEF_VALUE_ADVANTAGE = [
-    { id: 1, title: "10 Лет", subtitle: "Опыт работы" },
-    { id: 2, title: "с 2000 г.", subtitle: "В индустрии" },
-    { id: 3, title: "HTML, CSS, React", subtitle: "Дополнительные услуги" },
+    { id: 1, title: "Более 6 лет", subtitle: "Опыт работы" },
+    { id: 2, title: "С 2015 года", subtitle: "В индустрии" },
+    { id: 3, title: "HTML, CSS, React, JS", subtitle: "Дополнительные услуги" },
 ]
 
 const DEF_VALUE = {
